@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: plum;
+    color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.75rem;
+    padding-top: 3rem;
+    gap: 1rem;
+}
+
+.bg-text-animation {
+    position: absolute;
+    top:7rem;
+    font-size: 15rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px palevioletred;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: -1;
+    user-select: none;
+}
+
+.my-photo {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+ul {
+    width: 80%;
+    max-width: 40rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul.links li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.links {
+    margin-top: 3rem;
+}
+
+.link-card {
+    text-decoration: none;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 8px 10px 0px purple;
+    border: 2px solid white;
+}
+
+.link-card:hover {
+    border: 4px solid black;
+}
+
+.links .link-icon {
+    background-image: linear-gradient(to top, purple, cyan);
+    padding: 0.5rem;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .link-icon i {
+    color: black;
+}
+
+.link-action {
+    color: #8787A3;
+    cursor: pointer;
+}
+
+.copyright {
+    padding: 7rem;
+    color: white;
+    opacity: 0.4;
+}
